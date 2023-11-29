@@ -1,0 +1,76 @@
+.wrapper {
+  background-color: rgb(249, 250, 230);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: .3rem .6rem;
+  position: relative;
+}
+
+.current-wrapper {
+  display: flex;
+  margin-left: 20px;
+}
+
+.current-add,
+.current-remove {
+  position: relative;
+  width: 10px;
+  cursor: pointer;
+}
+
+.title {
+  margin-right: 35px;
+}
+
+.remove {
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+
+.current-add::after,
+.current-add::before,
+.current-remove::after,
+.current-remove::before{
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.remove::before,
+.remove::after {
+  position: absolute;
+  content: '';
+  top: 42%;
+  right: -1px;
+  width: 18px;
+  height: 2px;
+  background-color: rgb(255, 0, 0);
+  transform: rotate(45deg);
+}
+
+.current-add::before{
+  transform: rotate(90deg);
+}
+
+.remove::before {
+  transform: rotate(-45deg);
+}
+
+.current {
+  margin: 0 5px;
+}
+
+.price {
+  margin-left: 20px;
+}

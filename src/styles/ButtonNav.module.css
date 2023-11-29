@@ -1,0 +1,20 @@
+.item {
+  list-style-type: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  padding-bottom: 3px;
+  font-weight: 600;
+}
+
+.item:hover {
+  color: rebeccapurple;
+  /* text-decoration: underline; */
+  padding-bottom: 1px;
+  border-bottom: 2px solid rebeccapurple;
+}
+
+@media screen and (max-width: 550px ) {
+  .item {
+    margin-bottom: 10px;
+  }
+}

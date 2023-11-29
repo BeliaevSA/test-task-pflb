@@ -1,0 +1,11 @@
+.item {
+  list-style-type: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .3rem .6rem;
+}
+
+.item:hover {
+  background-color: rgb(211, 211, 211);
+}
